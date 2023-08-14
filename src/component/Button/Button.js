@@ -8,6 +8,7 @@ function Buttons(props) {
       variant={props.variant}
       fullWidth={props.fullWidth}
       sx={{ mt: 3, mb: 2 }}
+      onClick={props.onClick}
     >
       {props.label}
     </Button>

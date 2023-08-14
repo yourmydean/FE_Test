@@ -1,10 +1,13 @@
 import React from "react";
-import HalamanLogin from "./page/login/login";
+import Login from "./page/login/login";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Dashboard from "./page/dashboard/dashboard";
 import PrivateRoutes from "./utils/PrivateRoutes";
 import { ListRoutes } from "./utils/Routes";
 import NotFound from "./page/notfound/Notfound";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
 function App() {
   return (
@@ -18,7 +21,7 @@ function App() {
           })}
         </Route>
         <Route path="/" element={<Navigate to="/dashboard" />} />
-        <Route path="/login" element={<HalamanLogin />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

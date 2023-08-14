@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import React from "react";
 
 export default function NotFound() {
@@ -8,10 +9,15 @@ export default function NotFound() {
         justifyContent: "center",
         alignItems: "center",
         height: "100vh",
+        flexDirection: "column",
       }}
     >
-      <h1>404</h1>
-      <h5>Page Not Found</h5>
+      <Typography variant="h1" component="h2">
+        404
+      </Typography>
+      <Typography variant="subtitle1" component="subtitle1">
+        PAGE NOT FOUND
+      </Typography>
     </div>
   );
 }

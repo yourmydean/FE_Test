@@ -14,6 +14,7 @@ export default function InputTextMessage(props) {
       name={props.name}
       type={props.type}
       autoComplete={props.autoComplete}
+      onChange={props.onChange}
     />
   );
 }
